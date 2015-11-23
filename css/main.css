@@ -225,3 +225,10 @@
     margin-left: 0px !important;
   }
 }
+
+::selection {
+  background: #555;
+}
+::-moz-selection {
+  background: #555;
+}

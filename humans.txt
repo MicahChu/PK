@@ -3,11 +3,17 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    MicahChu -- Frontend Developer
 
 # THANKS
 
-    <name>
+    Creative Tim -- http://creative-tim.com
+    Mercy -- http://titus.tk/mercy
+    Twitter bootstrap -- http://getbootstrap.com
+    SmoothScroll -- http://cferdinandi.github.io/smooth-scroll
+    StickyJs -- http://stickyjs.com
+    Font-Awesome -- http://fortawesome.github.io/Font-Awesome
+    Initializr -- http://initializr.com
 
 # TECHNOLOGY COLOPHON
 
