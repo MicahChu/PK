@@ -4,16 +4,19 @@
 # TEAM
 
     MicahChu -- Frontend Developer
+    56awesome56 -- Backend Developer
+    Krizeh -- Server Integration
 
 # THANKS
 
-    Creative Tim -- http://creative-tim.com
-    Mercy -- http://titus.tk/mercy
-    Twitter bootstrap -- http://getbootstrap.com
-    SmoothScroll -- http://cferdinandi.github.io/smooth-scroll
-    StickyJs -- http://stickyjs.com
-    Font-Awesome -- http://fortawesome.github.io/Font-Awesome
-    Initializr -- http://initializr.com
+    Creative-Tim -- creative-tim.com
+    Twitter Bootstrap -- getbootstrap.com
+    Font-Awesome -- fortawesome.github.io/font-awesome
+    Google fonts -- google.com/fonts
+    SmoothScroll -- cferdinandi.github.io/smooth-scroll
+    StickyJS -- stickyjs.com
+
+    S_P_Y_R_O -- Runs Pixel
 
 # TECHNOLOGY COLOPHON
 

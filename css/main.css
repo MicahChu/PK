@@ -1,185 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Monsterrat);
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a,
-#cssmenu #menu-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  line-height: 1;
-  display: block;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-#cssmenu:after,
-#cssmenu > ul:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-#cssmenu #menu-button {
-  display: none;
-}
-#cssmenu {
-  width: auto;
-  font-family: Raleway, sans-serif;
-  line-height: 1;
-}
-#cssmenu > ul {
-  background: #3db2e1;
-}
-#cssmenu > ul > li {
-  float: left;
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  perspective: 1000px;
-}
-#cssmenu.align-center > ul {
-  font-size: 0;
-  text-align: center;
-}
-#cssmenu.align-center > ul > li {
-  display: inline-block;
-  float: none;
-}
-#cssmenu.align-right > ul > li {
-  float: right;
-}
-#cssmenu > ul > li > a {
-  padding: 16px 20px;
-  font-size: 14px;
-  color: #ffffff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #3db2e1;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  -webkit-transform-origin: 50% 0;
-  -moz-transform-origin: 50% 0;
-  transform-origin: 50% 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-#cssmenu > ul > li.active > a {
-  color: #dff2fa;
-}
-#cssmenu > ul > li:hover > a,
-#cssmenu > ul > li > a:hover {
-  color: #dff2fa;
-  -webkit-transform: rotateX(90deg) translateY(-23px);
-  -moz-transform: rotateX(90deg) translateY(-23px);
-  transform: rotateX(90deg) translateY(-23px);
-  -ms-transform: none;
-}
-#cssmenu > ul > li > a::before {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: -1;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  padding: 16px 20px;
-  color: #dff2fa;
-  background: #19799f;
-  content: attr(data-title);
-  -webkit-transition: background 0.3s;
-  -moz-transition: background 0.3s;
-  transition: background 0.3s;
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% 0;
-  -moz-transform-origin: 50% 0;
-  transform-origin: 50% 0;
-  -ms-transform: translateY(- -18px);
-}
-#cssmenu > ul > li:hover > a::before,
-#cssmenu > ul > li > a:hover::before {
-  background: #3db2e1;
-}
-#cssmenu.small-screen {
-  width: 100%;
-}
-#cssmenu.small-screen > ul,
-#cssmenu.small-screen.align-center > ul {
-  width: 100%;
-  text-align: left;
-}
-#cssmenu.small-screen > ul > li,
-#cssmenu.small-screen.align-center {
-  float: none;
-  display: block;
-  border-top: 1px solid rgba(100, 100, 100, 0.1);
-}
-#cssmenu.small-screen > ul > li:hover > a,
-#cssmenu.small-screen > ul > li > a:hover {
-  color: #dff2fa;
-  -webkit-transform: none;
-  -moz-transform: none;
-  transform: none;
-  -ms-transform: none;
-}
-#cssmenu.small-screen > ul > li > a::before {
-  display: none;
-}
-#cssmenu.small-screen #menu-button {
-  display: block;
-  padding: 16px 20px;
-  cursor: pointer;
-  font-size: 14px;
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background: #3db2e1;
-}
-#cssmenu.small-screen #menu-button:after {
-  content: "";
-  position: absolute;
-  right: 20px;
-  top: 17px;
-  display: block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  border-top: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  width: 22px;
-  height: 3px;
-}
-#cssmenu.small-screen #menu-button.menu-opened:after {
-  border-top: 2px solid #dff2fa;
-  border-bottom: 2px solid #dff2fa;
-}
-#cssmenu.small-screen #menu-button:before {
-  content: "";
-  position: absolute;
-  right: 20px;
-  top: 27px;
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: #ffffff;
-}
-#cssmenu.small-screen #menu-button.menu-opened:before {
-  background: #dff2fa;
-}
 
-::-webkit-scrollbar {
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   ::-webkit-scrollbar {
        background-color: #111111;
        width: 10px;
        height: 10px;
@@ -211,19 +35,69 @@
   width: 100% !important;
 }
 
-* {
-  transition: all 150ms linear;
+.column {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.row {
   max-width: 100%;
 }
 
-.nvbritem {
-  margin-left: 20px !important;
+.link-image {
+  width: 200px;
+  height: 200px;
+  border: 25px solid #0099ff;
+  background-color: #003d66;
+  margin: auto;
+  margin-bottom: 75px;
+  margin-top: 25px;
 }
 
-@media screen and (max-width:778px) {
-  .nvbritem {
-    margin-left: 0px !important;
+.link-image:hover {
+  border: 50px solid #0099ff;
+  background-color: #003d66;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .link-image:hover {
+    margin-bottom: 50px;
   }
+}
+
+* {
+  transition: all 150ms linear;
+}
+
+.limb {
+  margin-top: 5px;
+}
+
+.fa {
+  color: #f5f5f5;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.fac {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.limbt {
+  font-family: 'bitter';
+  color: #80c9ff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 15px;
+  text-align: center;
 }
 
 ::selection {
@@ -231,4 +105,70 @@
 }
 ::-moz-selection {
   background: #555;
+}
+
+.oversection {
+  background-color: #444;
+}
+
+.navbar {
+  opacity: 0.9;
+  border-radius: 0px;
+}
+
+.overt {
+  font-family: 'bitter';
+  color: #f5f5f5;
+  font-size: 38px;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.overp {
+  font: normal 14px Montserrat;
+  color: #f4f4f4;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width:1000px) {
+  .overp {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .overp {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+.navbar-subpages {
+  height: 70px;
+  position: fixed;
+  opacity: 1.0;
+}
+
+.nhs, .ncs, .nvs {
+  height: 46.666666667px;
+}
+
+.nbs {
+  margin: 0px 0px !important;
+  padding: 15px 15px !important;
+}
+
+.nvls {
+  padding: 10px 10px !important;
+  margin: 6px 6px !important;
+}
+
+.nvtgs {
+  margin-top: 4px !important;
+}
+
+.btn-primary {
+  color: black;
 }
