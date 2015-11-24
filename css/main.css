@@ -186,9 +186,25 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  width: 175px;
+  height: 175px;
+}
+
+.tmember:hover {
+  width: 225px;
+  height: 225px;
+  background-color: #003d66;
 }
 
 .row {
   margin-left: 0px;
   margin-right: 0px;
+}
+
+.tmt {
+  color: black;
+}
+
+.tmi {
+  margin-top: 20px;
 }
