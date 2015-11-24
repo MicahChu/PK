@@ -172,3 +172,23 @@
 .btn-primary {
   color: black;
 }
+
+.tsec {
+  background-color: #eee;
+}
+
+.tst {
+  color: #777;
+}
+
+.tmember {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}

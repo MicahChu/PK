@@ -2119,7 +2119,6 @@ textarea.form-control {
     body > .navbar-collapse ul {
       position: relative;
       z-index: 3;
-      overflow-y: scroll;
       height: 95%; }
     body > .navbar-collapse .nav > li {
       border-bottom: 1px solid; }
@@ -2475,11 +2474,11 @@ textarea.form-control {
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  */
-/*  
+/*
  *
  *   SCSS by Creative Tim
  *   http://www.creative-tim.com
- *   
+ *
  */
 .datepicker {
   top: 0;
