@@ -42,6 +42,8 @@
 
 .row {
   max-width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .link-image {
@@ -169,10 +171,6 @@
   margin-top: 4px !important;
 }
 
-.btn-primary {
-  color: black;
-}
-
 .tsec {
   background-color: #eee;
 }
@@ -186,6 +184,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  margin-top: 20px;
   width: 175px;
   height: 175px;
 }
@@ -194,11 +193,7 @@
   width: 225px;
   height: 225px;
   background-color: #003d66;
-}
-
-.row {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-bottom: -30px;
 }
 
 .tmt {
@@ -207,4 +202,22 @@
 
 .tmi {
   margin-top: 20px;
+}
+
+.pimg {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 300px;
+    cursor: pointer;
+}
+
+.popover {
+  background-color: #eee !important;
+  color: #444 !important;
+}
+
+.arrow::after {
+  border-top-color: #eee !important;
 }
