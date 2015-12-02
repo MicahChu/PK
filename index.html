@@ -13,10 +13,12 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="paperkit/assets/css/ct-paper.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-        <link href="Font-Awesome/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="Font-Awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -141,31 +143,36 @@ ProjectPixel is a good server and stuff like that. It's not my job to write cont
 </section>
 <section id="team" class="tsec">
   <p class="overt tst">Team</p>
-  <div id="caro" class="row">
-    <div class="col-md-4 column">
+  <div class="row caro">
+    <div>
       <div class="tmember">
       <img class="tmi" src="http://cravatar.eu/avatar/0973c676-9379-468f-b1ee-0e710c011a90/150.png"></img>
       <p class="limbt tmt">[Developer] Flap</p>
     </div>
     </div>
-  <div class="col-md-4 column">
+  <div>
     <div class="tmember" >
     <img class="tmi" src="http://cravatar.eu/avatar/80918cc3-b55b-43d5-8b28-e947583ec29b/150.png"></img>
     <p class="limbt tmt">[Owner] S_P_Y_R_O</p>
   </div>
   </div>
-  <div class="col-md-4 column">
+  <div>
     <div class="tmember">
     <img class="tmi" src="http://cravatar.eu/avatar/eea6bd3c-9732-46ff-8e04-db5e68606edc/150.png"></img>
     <p class="limbt tmt">[Webmaster] MicahChu</p>
   </div>
   </div>
+  <div>
+    <div class="tmember">
+    <img class="tmi" src="http://cravatar.eu/avatar/42bb9476-3100-4662-b15f-2426d554f95f/150.png"></img>
+    <p class="limbt tmt">[Developer] 56awesome56</p>
   </div>
-  <div id="carnumber"><p class="carnumber">1/2</p></div>
-  <div id="carobc" class="carobc">
-  <a class="carob" id="carleft"><i class="fa fa-3x fa-arrow-left"></i></a>
-  <a class="carob" id="carright"><i class="fa fa-3x fa-arrow-right"></i></a>
-</div>
+  </div>
+  </div>
+  <!-- <div class="carobc">
+  <a class="carob"><i class="fa fa-3x fa-arrow-left"></i></a>
+  <a class="carob"><i class="fa fa-3x fa-arrow-right"></i></a>
+</div> -->
   <div style="width:100%; height: 50px;"></div>
 </section>
 <section class="oversection" id="gallery">
@@ -198,6 +205,7 @@ ProjectPixel is a good server and stuff like that. It's not my job to write cont
         <script src="paperkit/assets/js/bootstrap-select.js"></script>
         <script src="paperkit/assets/js/bootstrap-datepicker.js"></script>
         <script src="paperkit/assets/js/ct-paper.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
 
         <script src="js/main.js"></script>
 
@@ -227,6 +235,41 @@ ProjectPixel is a good server and stuff like that. It's not my job to write cont
         $(function () {
   $('[data-toggle="popover"]').popover()
 })
+</script>
+
+<script>
+$('.caro').slick({
+  dots: true,
+  infinite: true,
+  speed: 200,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
 </script>
     </body>
 </html>

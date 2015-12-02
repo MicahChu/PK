@@ -54,6 +54,7 @@
   margin: auto;
   margin-bottom: 75px;
   margin-top: 25px;
+  border-radius: 20px;
 }
 
 .link-image:hover {
@@ -62,6 +63,7 @@
   height: 250px;
   margin-bottom: 25px;
   margin-top: 0px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 992px) {
@@ -203,7 +205,7 @@
   margin-top: -20px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .tmember {
     margin-bottom: 35px;
     padding-top: 0px;
@@ -217,10 +219,16 @@
 }
 .tmt {
   color: black;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tmi {
   margin-top: 20px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pimg {
@@ -278,10 +286,58 @@
   background-color: #0099ff !important;
 }
 
-.carnumber {
-  font: normal 24px Montserrat;
-  color: #666;
-  margin: 0 0 0 0;
-  text-align: center;
-  margin-top: 20px;
+.slick-arrow {
+  z-index: 3000 !important;
+  background-color: #666 !important;
+  border-radius: 10px !important;
+}
+
+.slick-next {
+  right: 60px !important;
+}
+
+.slick-prev {
+  left: 60px !important;
+}
+
+@media screen and (max-width: 1200px){
+  .slick-next {
+    right: 40px !important;
+  }
+
+  .slick-prev {
+    left: 40px !important;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .slick-next {
+    right: 30px !important;
+  }
+
+  .slick-prev {
+    left: 30px !important;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .slick-next {
+    right: 20px !important;
+  }
+
+  .slick-prev {
+    left: 20px !important;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .slick-next {
+    height: 0px !important;
+    width: 0px !important;
+  }
+
+  .slick-prev {
+    height: 0px !important;
+    width: 0px !important;
+  }
 }
