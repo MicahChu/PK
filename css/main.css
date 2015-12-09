@@ -327,3 +327,14 @@
 .modal-content {
   background-color: #f5f5f5 !important;
 }
+
+.tooltip {
+  opacity: 1.0 !important;
+  max-width: 200px !important;
+  min-width: 150px !important;
+}
+
+.links {
+  background-image: url(../img/linksbackground.png);
+  background-attachment: fixed;
+}
