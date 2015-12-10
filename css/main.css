@@ -181,10 +181,12 @@
 
 .tsec {
   background-color: #eee;
+  background-image: url(../img/teambackground.png);
+  background-attachment: fixed;
 }
 
 .tst {
-  color: #777;
+  color: #444;
 }
 
 .tmember {
