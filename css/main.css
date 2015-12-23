@@ -112,9 +112,11 @@
 
 ::selection {
   background: #555;
+  color: #f5f5f5;
 }
 ::-moz-selection {
   background: #555;
+  color: #f5f5f5;
 }
 
 .oversection {
@@ -339,4 +341,40 @@
 .links {
   background-image: url(../img/linksbackground.png);
   background-attachment: fixed;
+}
+
+.shoptabs {
+  top: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.shopcontainer {
+  border: 5px solid #333;
+  width: 80%;
+  float: left;
+  height: 100%;
+}
+
+.nav-tabs > li.active :before {
+  border-bottom: 11px solid #333 !important;
+}
+
+.nav-tabs > li.active :after {
+  border-bottom: 11px solid #333 !important;
+}
+
+.shopitem {
+  height: 150px;
+  width: 150px;
+  border: 5px solid #666;
+  background-color: transparent;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.shopitem:hover {
+  border: 0px solid;
+  background-color: #999;
+  border-radius: 0px;
 }

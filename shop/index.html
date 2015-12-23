@@ -16,7 +16,7 @@
 
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-        <link href="../Font-Awesome/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../Font-Awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -39,7 +39,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeInOutQuad&quot; }" class="navbar-brand nbs" href="../">Pixel Shop</a>
+      <a data-scroll="" data-options="{ &quot;easing&quot;: &quot;easeInOutQuad&quot; }" class="navbar-brand nbs" href="#top">Pixel Shop</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,7 +52,44 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div style="height: 50000px;"></div>
+
+<div class="container">
+<div class="shoptabs">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#1" aria-controls="1" role="tab" data-toggle="tab">1</a></li>
+    <li role="presentation"><a href="#2" aria-controls="2" role="tab" data-toggle="tab">2</a></li>
+    <li role="presentation"><a href="#3" aria-controls="3" role="tab" data-toggle="tab">3</a></li>
+    <li role="presentation"><a href="#4" aria-controls="4" role="tab" data-toggle="tab">4</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="1">
+      <div class="shopcontainer">
+        <p><div class="shopitem"></div></p>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="2">
+      <div class="shopcontainer">
+      <p>2nd Panel</p>
+    </div>
+  </div>
+    <div role="tabpanel" class="tab-pane" id="3">
+      <div class="shopcontainer">
+      <p>3rd Panel</p>
+    </div>
+  </div>
+    <div role="tabpanel" class="tab-pane" id="4">
+      <div class="shopcontainer">
+      <p>4th Panel</p>
+    </div>
+  </div>
+  </div>
+
+</div>
+</div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
@@ -76,5 +113,12 @@
 			callbackAfter: function ( toggle, anchor ) {}
 		});
 	      </script>
+
+        <script>
+        $('#1 a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
     </body>
 </html>
