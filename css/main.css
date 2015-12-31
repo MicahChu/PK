@@ -379,20 +379,6 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1205px) {
-  .shopitem {
-    height: 150px;
-    width: 150px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .shopitem {
-    height: 200px;
-    width: 200px;
-  }
-}
-
 .shopitem:hover {
   border: 5px solid #999;
   background-color: #999;
@@ -408,10 +394,34 @@
 }
 
 .shopimg {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: auto;
   display: block;
+}
+
+@media screen and (max-width: 1205px) {
+  .shopitem {
+    height: 150px;
+    width: 150px;
+  }
+  .shopimg {
+    height: 100px;
+    width: 100px;
+    margin-top: -5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .shopitem {
+    height: 200px;
+    width: 200px;
+  }
+  .shopimg {
+    height: 120px;
+    width: 120px;
+    margin-top: 0px;
+  }
 }
 
 .form-control {
