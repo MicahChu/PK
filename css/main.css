@@ -464,3 +464,11 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.shopbody {
+  background-color: #eee;
+  background-image: url(../img/shop.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
