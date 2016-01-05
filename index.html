@@ -329,9 +329,12 @@ $(function () {
 </script>
 
 <script type="text/javascript">
-    $(window).load(function(){
-        $('#betamodal').modal('show');
-    });
+    if (document.cookie.indexOf("test") == -1) {
+      $(window).load(function(){
+          set_cookie( "updates", "test", 30 );
+          $('#betamodal').modal('show');
+      });
+    }
 </script>
     </body>
 </html>
