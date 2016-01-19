@@ -247,8 +247,11 @@ ProjectPixel is a good server and stuff like that. It's not my job to write cont
       <h4 class="modal-title" id="myModalLabel">Thank you for previewing the Project Pixel website!</h4>
     </div>
     <div class="modal-body">
-      <p>New in this version: <a href="shop">shop</a> and other minor edits to the site!</p>
-      <p>If you would like to suggest changes or help with the site, contact Micah at sarkydude@live.com or at his Enjin profile <a href="http://www.enjin.com/profile/8956623">here</a>.
+      <p>New in this version: All new forums <a href="/forum">here</a>!</p>
+      <p>Other edits worth noting: Fix for images on 1080p monitors on homepage, background image for shop, and this popup only showing up the first time you load the page after each update!*</p>
+      <p>If you would like to suggest changes or help with the site, contact Micah at sarkydude@live.com or at his Enjin profile <a href="http://www.enjin.com/profile/8956623">here</a>.</p>
+      <hr>
+      <p>*In order to do this, this site uses <span style="color: #DD4B3C;">cookies</span>. If you do not wish to be tracked, please disable cookies in your browser.</p>
     </div>
   </div>
 </div>
@@ -329,9 +332,9 @@ $(function () {
 </script>
 
 <script type="text/javascript">
-    if (document.cookie.indexOf("test") == -1) {
+    if (document.cookie.indexOf("up1") == -1) {
       $(window).load(function(){
-          set_cookie( "updates", "test", 30 );
+          set_cookie( "updates", "up1", 30 );
           $('#betamodal').modal('show');
       });
     }
