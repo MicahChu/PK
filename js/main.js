@@ -15,3 +15,17 @@ function get_cookie ( cookie_name )
   }
   return '' ;
 }
+
+function refresh() {
+  $.get("/players.php", function(data) {
+    if (data == "offline") {
+      $("#status").text("Server is offline");
+    } else {
+      var d = JSON.parse(data);
+      $("#status").attr("title", "Online Players: " + d.online + "/" + d.max);
+      $("#status").attr("data-original-title", "Online Players: " + d.online + "/" + d.max);
+    }
+  });
+}
+setInterval(refresh, 15000);
+refresh();

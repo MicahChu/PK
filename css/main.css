@@ -328,8 +328,6 @@
 
 .tooltip {
   opacity: 1.0 !important;
-  max-width: 200px !important;
-  min-width: 150px !important;
 }
 
 .links {
